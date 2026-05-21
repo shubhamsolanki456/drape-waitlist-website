@@ -110,7 +110,7 @@ export default function Showcase() {
             initial={{ opacity: 0, x: -50, y: 30, rotate: -5 }}
             animate={isInView ? { opacity: 1, x: 0, y: 0, rotate: -5 } : {}}
             transition={{ duration: 0.8, delay: 0.2 }}
-            className="absolute left-0 md:left-[5%] top-1/2 -translate-y-1/2 w-[45%] md:w-[32%] aspect-[3/4] z-10 hover:z-30 hover:scale-105 transition-all duration-300"
+            className="absolute left-0 md:left-[5%] top-1/2 -translate-y-1/2 w-[45%] md:w-[32%] aspect-[3/4] z-10 hover:z-30 hover:scale-105 focus-within:z-30 focus-within:scale-105 active:z-30 active:scale-105 transition-all duration-300"
           >
             <ImageSlider beforeSrc="/before 2.webp" afterSrc="/after 2.webp" />
           </motion.div>
@@ -120,7 +120,7 @@ export default function Showcase() {
             initial={{ opacity: 0, x: 50, y: 30, rotate: 5 }}
             animate={isInView ? { opacity: 1, x: 0, y: 0, rotate: 5 } : {}}
             transition={{ duration: 0.8, delay: 0.4 }}
-            className="absolute right-0 md:right-[5%] top-1/2 -translate-y-1/2 w-[45%] md:w-[32%] aspect-[3/4] z-10 hover:z-30 hover:scale-105 transition-all duration-300"
+            className="absolute right-0 md:right-[5%] top-1/2 -translate-y-1/2 w-[45%] md:w-[32%] aspect-[3/4] z-10 hover:z-30 hover:scale-105 focus-within:z-30 focus-within:scale-105 active:z-30 active:scale-105 transition-all duration-300"
           >
             <ImageSlider beforeSrc="/before 3.webp" afterSrc="/after 3.webp" />
           </motion.div>
@@ -130,7 +130,7 @@ export default function Showcase() {
             initial={{ opacity: 0, y: 50 }}
             animate={isInView ? { opacity: 1, y: 0 } : {}}
             transition={{ duration: 0.8, delay: 0.6 }}
-            className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 w-[60%] md:w-[38%] aspect-[3/4] z-20 hover:scale-[1.02] hover:z-30 transition-all duration-300 shadow-2xl shadow-black/50"
+            className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 w-[60%] md:w-[38%] aspect-[3/4] z-20 hover:scale-[1.02] hover:z-30 focus-within:z-30 focus-within:scale-[1.02] active:z-30 active:scale-[1.02] transition-all duration-300 shadow-2xl shadow-black/50"
           >
             <ImageSlider beforeSrc="/before 1.webp" afterSrc="/after 1.webp" />
           </motion.div>

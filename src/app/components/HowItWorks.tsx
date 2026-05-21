@@ -69,7 +69,7 @@ export default function HowItWorks() {
         {/* Steps */}
         <div className="relative">
           {/* Connecting line */}
-          <div className="absolute left-8 md:left-1/2 top-0 bottom-0 w-px bg-gradient-to-b from-white/20 via-white/10 to-transparent hidden md:block" />
+          <div className="absolute left-8 md:left-1/2 top-0 bottom-0 w-px bg-gradient-to-b from-white/20 via-white/10 to-transparent" />
 
           {steps.map((step, i) => {
             const Icon = step.icon;
@@ -87,7 +87,7 @@ export default function HowItWorks() {
               >
                 {/* Content */}
                 <div
-                  className={`flex-1 ${
+                  className={`flex-1 pl-16 md:pl-0 w-full ${
                     isEven ? "md:text-right" : "md:text-left"
                   }`}
                 >
@@ -118,7 +118,7 @@ export default function HowItWorks() {
                 </div>
 
                 {/* Center dot */}
-                <div className="hidden md:flex absolute left-1/2 -translate-x-1/2 w-4 h-4 rounded-full bg-white shadow-[0_0_20px_rgba(255,255,255,0.5)] items-center justify-center z-10">
+                <div className="flex absolute left-8 md:left-1/2 -translate-x-1/2 w-4 h-4 rounded-full bg-white shadow-[0_0_20px_rgba(255,255,255,0.5)] items-center justify-center z-10">
                   <div className="w-2 h-2 rounded-full bg-drape-black" />
                 </div>
 

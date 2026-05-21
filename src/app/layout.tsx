@@ -37,7 +37,7 @@ export default function RootLayout({ children }: { children: ReactNode }) {
           rel="stylesheet"
         />
       </head>
-      <body className="bg-drape-black text-white antialiased">{children}</body>
+      <body className="bg-drape-black text-white antialiased overflow-x-hidden">{children}</body>
     </html>
   );
 }
