@@ -43,8 +43,8 @@ function ImageSlider({ beforeSrc, afterSrc }: { beforeSrc: string; afterSrc: str
       {/* Base image is now After, so it is on the right side */}
       <img src={afterSrc} className="absolute inset-0 w-full h-full object-cover pointer-events-none select-none" alt="After" />
       
-      <div className="absolute top-4 right-4 z-0 px-3 py-1 rounded-full bg-black/50 backdrop-blur-md border border-white/10">
-        <span className="text-xs font-bold uppercase tracking-widest shimmer-text">After</span>
+      <div className="absolute top-2 right-2 md:top-4 md:right-4 z-0 px-2 py-0.5 md:px-3 md:py-1 rounded-full bg-black/50 backdrop-blur-md border border-white/10">
+        <span className="text-[10px] md:text-xs font-bold uppercase tracking-widest shimmer-text">After</span>
       </div>
 
       <div 
@@ -54,8 +54,8 @@ function ImageSlider({ beforeSrc, afterSrc }: { beforeSrc: string; afterSrc: str
         {/* Clipped image is now Before, so it is on the left side */}
         <img src={beforeSrc} className="absolute inset-0 w-full h-full object-cover" alt="Before" />
         
-        <div className="absolute top-4 left-4 z-0 px-3 py-1 rounded-full bg-black/50 backdrop-blur-md border border-white/10">
-          <span className="text-xs font-bold uppercase tracking-widest shimmer-text">Before</span>
+        <div className="absolute top-2 left-2 md:top-4 md:left-4 z-0 px-2 py-0.5 md:px-3 md:py-1 rounded-full bg-black/50 backdrop-blur-md border border-white/10">
+          <span className="text-[10px] md:text-xs font-bold uppercase tracking-widest shimmer-text">Before</span>
         </div>
       </div>
       <input 
@@ -64,10 +64,10 @@ function ImageSlider({ beforeSrc, afterSrc }: { beforeSrc: string; afterSrc: str
         className="absolute inset-0 w-full h-full opacity-0 cursor-ew-resize z-10" 
       />
       <div className="absolute top-0 bottom-0 w-0.5 bg-white cursor-ew-resize shadow-[0_0_10px_rgba(0,0,0,0.5)] z-0 pointer-events-none" style={{ left: `calc(${sliderPosition}% - 1px)` }}>
-         <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-8 h-8 bg-white rounded-full flex items-center justify-center shadow-lg transition-transform group-hover:scale-110">
+         <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-6 h-6 md:w-8 md:h-8 bg-white rounded-full flex items-center justify-center shadow-lg transition-transform group-hover:scale-110">
            <div className="flex gap-1">
-             <div className="w-0.5 h-3 bg-gray-400 rounded-full" />
-             <div className="w-0.5 h-3 bg-gray-400 rounded-full" />
+             <div className="w-[1.5px] h-2.5 md:w-0.5 md:h-3 bg-gray-400 rounded-full" />
+             <div className="w-[1.5px] h-2.5 md:w-0.5 md:h-3 bg-gray-400 rounded-full" />
            </div>
          </div>
       </div>
@@ -103,7 +103,7 @@ export default function Showcase() {
         </motion.div>
 
         {/* Before/After Sliders Layout */}
-        <div className="relative w-full max-w-5xl mx-auto h-[500px] md:h-[600px] mt-10">
+        <div className="relative w-full max-w-5xl mx-auto h-[350px] sm:h-[450px] md:h-[600px] mt-8 md:mt-10">
           
           {/* Left Image (2) */}
           <motion.div

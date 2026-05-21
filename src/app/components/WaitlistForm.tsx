@@ -65,7 +65,7 @@ export default function WaitlistForm() {
           <span className="text-xs text-drape-text-dim uppercase tracking-[0.2em] mb-4 block">
             Early Access
           </span>
-          <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white tracking-tight mb-6">
+          <h2 className="text-3xl md:text-5xl lg:text-6xl font-bold text-white tracking-tight mb-6">
             Be the First to
             <br />
             <span className="shimmer-text">Experience DRAPE</span>
@@ -81,7 +81,7 @@ export default function WaitlistForm() {
           initial={{ opacity: 0, y: 40 }}
           animate={isInView ? { opacity: 1, y: 0 } : {}}
           transition={{ duration: 0.8, delay: 0.2 }}
-          className="liquid-glass-strong rounded-3xl p-8 md:p-12"
+          className="liquid-glass-strong rounded-3xl p-6 sm:p-8 md:p-12"
         >
           <AnimatePresence mode="wait">
             {status === "success" ? (

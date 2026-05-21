@@ -39,11 +39,11 @@ export default function Footer() {
           initial={{ opacity: 0, y: 30 }}
           animate={isInView ? { opacity: 1, y: 0 } : {}}
           transition={{ duration: 0.6 }}
-          className="grid grid-cols-1 md:grid-cols-3 gap-12 lg:gap-8"
+          className="grid grid-cols-1 md:grid-cols-3 gap-12 lg:gap-8 text-center md:text-left"
         >
           {/* Logo & Tagline */}
           <div className="col-span-1">
-            <div className="flex items-center gap-3 mb-4">
+            <div className="flex items-center justify-center md:justify-start gap-3 mb-4">
               <img src="/hanger.png" alt="DRAPE" className="w-12 h-12 object-contain" />
               <span className="text-white font-semibold text-lg tracking-tight">
                 DRAPE
@@ -53,7 +53,7 @@ export default function Footer() {
               Your wardrobe, reimagined. Experience the future of personal style and outfit curation today.
             </p>
             {/* Social Links */}
-            <div className="flex items-center gap-3">
+            <div className="flex items-center justify-center md:justify-start gap-3">
               {socialLinks.map((social) => {
                 const Icon = social.icon;
                 return (

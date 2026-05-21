@@ -30,7 +30,7 @@ export default function Hero() {
           initial={{ opacity: 0, y: 40 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.2 }}
-          className="text-[clamp(3rem,10vw,8rem)] font-bold leading-[0.95] tracking-tighter mb-8"
+          className="text-[clamp(2.5rem,8vw,8rem)] font-bold leading-[0.95] tracking-tighter mb-8"
         >
           <span className="block text-white">Your Wardrobe,</span>
           <span className="block shimmer-text">Reimagined.</span>
@@ -71,7 +71,7 @@ export default function Hero() {
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.8 }}
-          className="mt-20 grid grid-cols-3 gap-8 max-w-lg mx-auto"
+          className="mt-12 md:mt-20 grid grid-cols-3 gap-4 md:gap-8 max-w-lg mx-auto"
         >
           {[
             { value: "2K+", label: "Waitlist" },
