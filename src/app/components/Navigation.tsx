@@ -34,13 +34,13 @@ export default function Navigation() {
       >
         <div className="max-w-7xl mx-auto px-4 md:px-6">
           <div
-            className={`liquid-glass rounded-2xl px-4 py-2 md:px-6 md:py-3 flex items-center justify-between transition-all duration-500 ${
+            className={`liquid-glass rounded-2xl px-3 py-1.5 md:px-6 md:py-3 flex items-center justify-between transition-all duration-500 ${
               scrolled ? "shadow-lg" : ""
             }`}
           >
             <a href="#" className="flex items-center gap-2">
-              <img src="/hanger.png" alt="DRAPE" className="w-8 h-8 md:w-12 md:h-12 object-contain" />
-              <span className="text-white font-semibold text-base md:text-lg tracking-tight">
+              <img src="/hanger.png" alt="DRAPE" className="w-6 h-6 md:w-12 md:h-12 object-contain" />
+              <span className="text-white font-semibold text-sm md:text-lg tracking-tight">
                 DRAPE
               </span>
             </a>
